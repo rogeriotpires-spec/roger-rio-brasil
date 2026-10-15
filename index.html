@@ -72,6 +72,12 @@ h3{font-family:var(--f-marca);text-wrap:balance}
 .btn.primary{background:var(--tinta);border-color:var(--tinta);color:var(--papel)}
 .btn:hover{background:var(--tinta);color:var(--papel)}
 .btn.primary:hover{background:var(--tinta-escura);border-color:var(--tinta-escura)}
+.social{list-style:none;margin:30px 0 0;padding:26px 0 0;display:flex;gap:36px;flex-wrap:wrap;border-top:1px solid var(--sup2);max-width:560px}
+.social a{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--tinta)}
+.social svg{flex:none}
+.social span{display:flex;flex-direction:column;line-height:1.25;font-size:14px;color:var(--sec)}
+.social b{font:600 18px var(--f-texto);color:var(--tinta)}
+.social a:hover b{border-bottom:1.5px solid var(--ouro)}
 
 /* seções */
 .wrap{max-width:1280px;margin:auto;padding:112px var(--gut)}
@@ -164,7 +170,11 @@ h3{font-family:var(--f-marca);text-wrap:balance}
     <h1 class="lockup"><span>Roger<span class="rio">Rio</span></span><span class="br">BRASIL</span></h1>
     <p class="slogan">Fato, dado e opinião.</p>
     <p class="lead">Sou jornalista, professor e pesquisador. Comento política na Jovem Pan News Rio e escrevo na Revista Timeline.</p>
-    <div class="actions"><a class="btn primary" href="#atuacao">Conheça meu trabalho</a><a class="btn" href="https://www.instagram.com/rogerrio/" target="_blank" rel="noopener noreferrer">Siga no Instagram ↗</a></div>
+    <div class="actions"><a class="btn primary" href="#atuacao">Conheça meu trabalho</a><a class="btn" href="#contato">Fale comigo</a></div>
+    <ul class="social" aria-label="Redes sociais">
+      <li><a href="https://www.instagram.com/rogerrio/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.6" cy="6.4" r="1.15" fill="currentColor" stroke="none"/></svg><span><b>@rogerrio</b>Instagram</span></a></li>
+      <li><a href="https://x.com/rogerrioX" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="currentColor"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg><span><b>@rogerrioX</b>X</span></a></li>
+    </ul>
   </div></div>
 </section>
 
