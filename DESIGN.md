@@ -1,4 +1,4 @@
-# Roger Rio Brasil: identidade visual
+# RogerRio Brasil: identidade visual
 
 Identidade da marca pessoal de Rogerio Pires. Arquivos da logo em assets/marca/.
 
@@ -8,7 +8,7 @@ Autoridade carioca com alcance nacional. Sério, noturno, elegante; o dourado é
 ## Cores (papéis)
 - Fundo: #050D18 (azul-noite, quase preto, tirado do céu da logo)
 - Superfície: #0B1A2B (um degrau acima do fundo, para cartões e faixas)
-- Texto principal: #F5F2EC (branco quente, como o "ROGER" da logo)
+- Texto principal: #F5F2EC (branco quente, como o "Roger" da logo)
 - Texto secundário: #B7C0CB (contraste 9,5:1 sobre a superfície)
 - Acento dourado: #D9A84E (contraste 9:1 sobre o fundo). Só no botão principal, no "RIO" do nome e em no máximo um detalhe por tela.
 - Dourado claro (hover e realces): #F1C66A
@@ -18,10 +18,11 @@ Autoridade carioca com alcance nacional. Sério, noturno, elegante; o dourado é
 Proibido: degradês decorativos, brilho metálico simulado em CSS, azul-royal genérico, mais de um dourado na mesma tela.
 
 ## Tipografia
-- Nome e títulos: Montserrat SemiBold (Google Fonts). Caixa normal nos títulos de seção; caixa-alta só no nome.
-- "BRASIL" e assinaturas curtas: Montserrat Light, caixa-alta, espaçamento 0,4em (só aqui).
-- Texto corrido: Inter Regular, 17px, entrelinha 1,6.
-- Escala: 14 / 17 / 24 / 40 / 72 px (cinco tamanhos, nada além disso).
+- Nome: sempre junto, "RogerRio", com "Rio" em dourado, para se ler Rogerio. Nunca "ROGER RIO" separado.
+- Nome e títulos de seção: DM Serif Display (Google Fonts), caixa normal.
+- "BRASIL" e slogan: Montserrat Light/Medium, caixa-alta espaçada (só na marca).
+- Texto corrido e botões: Inter, 17px, entrelinha 1,6.
+- Escala: 15 / 17 / 22 / 48 / 104 px.
 
 ## Espaçamento e forma
 - Unidade base 8px; margens laterais 20px no celular, 48px no desktop.

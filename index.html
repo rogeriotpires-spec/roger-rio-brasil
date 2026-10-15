@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Roger Rio Brasil | Rogerio Pires</title>
+<title>RogerRio Brasil | Rogerio Pires</title>
 <meta name="description" content="Rogerio Pires: jornalista, professor e pesquisador. Comentarista da Jovem Pan News Rio e autor na Revista Timeline. Fato, dado e opinião.">
 <meta name="theme-color" content="#050D18">
 <link rel="icon" href="assets/marca/favicon.svg" type="image/svg+xml">
@@ -11,8 +11,8 @@
 <link rel="apple-touch-icon" href="assets/marca/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
-<meta property="og:site_name" content="Roger Rio Brasil">
-<meta property="og:title" content="Roger Rio Brasil | Rogerio Pires">
+<meta property="og:site_name" content="RogerRio Brasil">
+<meta property="og:title" content="RogerRio Brasil | Rogerio Pires">
 <meta property="og:description" content="Fato, dado e opinião. Jornalismo, educação, inovação e pesquisa, do Rio para o Brasil.">
 <meta property="og:url" content="https://rogerrio.com.br/">
 <meta property="og:image" content="https://rogerrio.com.br/assets/marca/compartilhamento.png">
@@ -22,13 +22,14 @@
 <meta name="twitter:site" content="@rogerrioX">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Inter:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@300;500&family=Inter:wght@400;600&display=swap">
 <link rel="preload" as="image" href="assets/cenario.webp">
 <style>
-/* Identidade: ver DESIGN.md. Azul-noite, branco quente e um dourado por tela; Montserrat na marca, Inter no texto; cantos retos. */
+/* Identidade: ver DESIGN.md. Azul-noite, branco quente e um dourado por tela; DM Serif Display no nome e títulos, Montserrat no BRASIL e slogan, Inter no texto; cantos retos. */
 :root{
   color-scheme:dark;
   --noite:#050D18; --sup:#0B1A2B; --sup2:#11243A; --branco:#F5F2EC; --sec:#B7C0CB; --ouro:#D9A84E; --ouro-claro:#F1C66A;
+  --f-nome:"DM Serif Display",Georgia,"Times New Roman",serif;
   --f-marca:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;
   --f-texto:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
   --gut:clamp(20px,4vw,64px);
@@ -39,7 +40,8 @@ body{margin:0;background:var(--noite);color:var(--branco);font:17px/1.6 var(--f-
 a{color:inherit}
 img{max-width:100%}
 :focus-visible{outline:2px solid var(--ouro);outline-offset:3px}
-h1,h2,h3{font-family:var(--f-marca);text-wrap:balance}
+h1,h2{font-family:var(--f-nome);font-weight:400;text-wrap:balance}
+h3{font-family:var(--f-marca);text-wrap:balance}
 
 /* topo */
 .topbar{position:sticky;top:0;z-index:20;background:var(--noite);display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px var(--gut)}
@@ -61,9 +63,9 @@ h1,h2,h3{font-family:var(--f-marca);text-wrap:balance}
 .person{position:absolute;bottom:-90px;left:clamp(-125px,-5vw,-35px);height:min(800px,112%);width:auto;max-width:none;object-fit:contain;z-index:-1}
 .hero-inner{max-width:1460px;margin:auto;min-height:690px;display:flex;align-items:center;padding:50px var(--gut);padding-left:clamp(490px,39vw,640px)}
 .copy{max-width:620px}
-.lockup{display:inline-flex;flex-direction:column;margin:0;font-weight:600;line-height:1;letter-spacing:-.01em;font-size:clamp(56px,6.4vw,96px);text-shadow:0 3px 18px rgba(0,0,0,.5)}
+.lockup{display:inline-flex;flex-direction:column;margin:0;font-weight:400;line-height:1;letter-spacing:-.01em;font-size:clamp(64px,7.4vw,112px);text-shadow:0 3px 18px rgba(0,0,0,.5)}
 .lockup .rio{color:var(--ouro)}
-.lockup .br{display:flex;align-items:center;gap:18px;font-weight:300;font-size:.27em;letter-spacing:.62em;margin-top:14px;padding-left:.62em}
+.lockup .br{display:flex;align-items:center;gap:18px;font:300 .24em var(--f-marca);letter-spacing:.62em;margin-top:.32em;padding-left:.62em}
 .lockup .br::before,.lockup .br::after{content:"";flex:1;height:2px;background:var(--ouro)}
 .slogan{font:500 clamp(22px,2.2vw,30px)/1.3 var(--f-marca);margin:28px 0 8px}
 .lead{font-size:19px;line-height:1.55;margin:0 0 30px;color:var(--branco);max-width:28em;text-shadow:0 2px 10px rgba(0,0,0,.6)}
@@ -74,7 +76,7 @@ h1,h2,h3{font-family:var(--f-marca);text-wrap:balance}
 
 /* seções */
 .wrap{max-width:1280px;margin:auto;padding:112px var(--gut)}
-.sec-title{font-weight:600;font-size:clamp(30px,3.4vw,46px);line-height:1.12;margin:0 0 40px}
+.sec-title{font-size:clamp(34px,3.8vw,52px);line-height:1.1;margin:0 0 40px}
 .muted{color:var(--sec)}
 
 .areas{background:var(--noite)}
@@ -88,7 +90,7 @@ h1,h2,h3{font-family:var(--f-marca);text-wrap:balance}
 .sobre{background:var(--sup)}
 .sobre-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:start}
 .sobre-grid p{color:#D5DBE2;margin:0 0 18px;max-width:62ch}
-.assinatura{font:500 26px var(--f-marca);color:var(--ouro)!important;margin-top:30px!important}
+.assinatura{font:400 30px var(--f-nome);color:var(--ouro)!important;margin-top:30px!important}
 .titulos{color:var(--sec)!important;font-size:15px}
 
 .hub-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:72px;align-items:center}
@@ -106,12 +108,12 @@ h1,h2,h3{font-family:var(--f-marca);text-wrap:balance}
 .proj a{margin-top:auto;font-weight:600;font-size:15px;text-decoration:none;border-bottom:1.5px solid var(--ouro);align-self:flex-start;padding-bottom:2px}
 
 .contato-flex{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
-.contato h2{font-weight:600;font-size:clamp(30px,3.4vw,46px);margin:0 0 8px}
+.contato h2{font-size:clamp(34px,3.8vw,52px);margin:0 0 8px}
 
 .site-footer{background:var(--noite);border-top:1px solid var(--sup2);padding:28px var(--gut) 36px;color:var(--sec);font-size:14px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
 .foot-brand{display:flex;align-items:center;gap:14px}
 .foot-brand img{width:44px;height:auto}
-.foot-brand strong{color:var(--branco);font:600 15px var(--f-marca)}
+.foot-brand strong{color:var(--branco);font:400 18px var(--f-nome)}
 .visit-counter{display:inline-flex;align-items:center;gap:8px;line-height:1.4}
 .visit-counter img{display:block;height:20px;width:auto}
 
@@ -135,7 +137,7 @@ h1,h2,h3{font-family:var(--f-marca);text-wrap:balance}
   .person{height:540px;bottom:auto;top:0;left:50%;transform:translateX(-50%)}
   .hero-inner{min-height:840px;align-items:flex-end;padding:420px 20px 56px}
   .copy{margin:0;max-width:100%;width:100%;text-align:center}
-  .lockup{font-size:clamp(46px,13vw,64px)}
+  .lockup{font-size:clamp(54px,16vw,76px)}
   .lockup .br{gap:12px}
   .slogan{font-size:21px;margin-top:22px}
   .lead{font-size:16px;margin:0 auto 24px;max-width:24em}
@@ -156,7 +158,7 @@ h1,h2,h3{font-family:var(--f-marca);text-wrap:balance}
 </head>
 <body>
 <header class="topbar">
-  <a class="brand" href="#inicio" aria-label="Roger Rio Brasil, início"><img src="assets/marca/logo-horizontal.svg" alt="Roger Rio Brasil" width="220" height="59"></a>
+  <a class="brand" href="#inicio" aria-label="RogerRio Brasil, início"><img src="assets/marca/logo-horizontal.svg" alt="RogerRio Brasil" width="220" height="66"></a>
   <nav class="nav" aria-label="Navegação principal"><a href="#atuacao">Atuação</a><a href="#sobre">Sobre</a><a href="#hub-rj">HUB RJ</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a></nav>
   <details class="menu"><summary aria-label="Abrir menu">Menu</summary><nav aria-label="Navegação no celular"><a href="#atuacao">Atuação</a><a href="#sobre">Sobre</a><a href="#hub-rj">HUB RJ</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a></nav></details>
 </header>
@@ -166,7 +168,7 @@ h1,h2,h3{font-family:var(--f-marca);text-wrap:balance}
   <div class="landscape" aria-hidden="true"></div>
   <img class="person" src="assets/personagem.webp" alt="Retrato de Rogerio Pires" width="933" height="1400" fetchpriority="high">
   <div class="hero-inner"><div class="copy">
-    <h1 class="lockup"><span>ROGER <span class="rio">RIO</span></span><span class="br">BRASIL</span></h1>
+    <h1 class="lockup"><span>Roger<span class="rio">Rio</span></span><span class="br">BRASIL</span></h1>
     <p class="slogan">Fato, dado e opinião.</p>
     <p class="lead">Sou jornalista, professor e pesquisador. Comento política na Jovem Pan News Rio e escrevo na Revista Timeline.</p>
     <div class="actions"><a class="btn primary" href="#atuacao">Conheça meu trabalho</a><a class="btn" href="https://www.instagram.com/rogerrio/" target="_blank" rel="noopener noreferrer">Siga no Instagram ↗</a></div>
@@ -223,7 +225,7 @@ h1,h2,h3{font-family:var(--f-marca);text-wrap:balance}
 </main>
 
 <footer class="site-footer">
-  <div class="foot-brand"><img src="assets/marca/monograma.svg" alt="" width="44" height="44"><div><strong>Roger Rio Brasil</strong><br>Fato, dado e opinião</div></div>
+  <div class="foot-brand"><img src="assets/marca/monograma.svg" alt="" width="44" height="44"><div><strong>RogerRio Brasil</strong><br>Fato, dado e opinião</div></div>
   <div>© 2026 Rogerio Pires · Rio de Janeiro, Brasil</div>
   <div class="visit-counter" title="Contagem de acessos desde 11/10/2026. Não representa visitantes únicos."><a href="https://hits.sh/rogerrio.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Consultar estatísticas de acessos"><img src="https://hits.sh/rogerrio.com.br.svg?style=flat-square&amp;label=Acessos&amp;color=d9a84e&amp;labelColor=0b1a2b" alt="Total de acessos" height="20" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>Contador temporariamente indisponível</span></a><span>desde 11/10/2026</span></div>
 </footer>
