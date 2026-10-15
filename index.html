@@ -1,29 +1,232 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RogerRio Brasil | Rogerio Pires</title><meta name="description" content="Rogerio Pires: jornalismo, educação, inovação e pesquisa. Rio de Janeiro no coração, Brasil no horizonte."><style>
-:root{--navy:#041423;--gold:#f1bf5b;--white:#f8f7f3}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--navy);color:var(--white);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}button,a{touch-action:manipulation}.topbar{height:84px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(20px,4vw,72px);background:#041320;position:relative;z-index:10;border-bottom:1px solid #ffffff20}.brand{display:flex;align-items:center;gap:14px}.monogram{font-family:Georgia,serif;font-size:55px;letter-spacing:-13px;padding-right:12px;line-height:1;color:var(--gold)}.brandtext{display:flex;flex-direction:column;line-height:1}.brandtext strong{font:700 27px Georgia,serif;letter-spacing:-1px}.brandtext strong span{color:var(--gold)}.brandtext small{font-size:10px;letter-spacing:6px;text-align:center;margin-top:6px}.nav{display:flex;gap:clamp(12px,1.6vw,28px);font-size:13px}.nav a:hover,.nav a:focus-visible{color:var(--gold)}.hero{position:relative;min-height:690px;isolation:isolate;overflow:hidden;background:#041423}.landscape{position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(2,13,25,.04) 0%,rgba(2,13,25,.27) 29%,rgba(2,13,25,.77) 43%,rgba(2,13,25,.66) 64%,rgba(2,13,25,.12) 100%),url('assets/cenario.png');background-position:center;background-size:cover;z-index:-2}.landscape:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#041423 0%,transparent 29%)}.person{position:absolute;bottom:-90px;left:clamp(-125px,-5vw,-35px);height:min(800px,112%);max-width:none;object-fit:contain;z-index:-1;filter:drop-shadow(16px 4px 18px #0008)}.hero-inner{max-width:1460px;margin:auto;min-height:690px;display:flex;align-items:center;padding:50px clamp(28px,5vw,90px);padding-left:clamp(490px,39vw,640px)}.copy{max-width:610px;margin-top:-12px}.eyebrow{font-size:14px;letter-spacing:3px;font-weight:700;line-height:1.8;text-shadow:0 2px 9px #001}.eyebrow span{color:var(--gold)}h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(64px,7.5vw,112px);line-height:1.03;letter-spacing:-6px;margin:15px 0 0;white-space:nowrap;text-shadow:0 3px 18px #0008}h1 span{color:var(--gold)}.brasil{font-size:24px;letter-spacing:15px;margin-left:165px;margin-top:4px}.lead{font-size:20px;line-height:1.6;margin:30px 0;color:#fff;text-shadow:0 2px 10px #001}.actions{display:flex;gap:13px;flex-wrap:wrap}.btn{padding:18px 20px;border:1px solid var(--gold);font-size:13px;font-weight:800;letter-spacing:.15px;background:#03101dbf}.btn.primary{background:var(--gold);color:#071321}.btn:hover{filter:brightness(1.12)}.bottomline{position:absolute;bottom:20px;right:38px;font-size:11px;letter-spacing:2px;text-align:right;color:#fff9}.status{background:#071d2f;padding:28px 5vw;text-align:center;border-top:1px solid #c59a4938}.status strong{color:var(--gold)}.status p{max-width:800px;margin:8px auto;line-height:1.5;color:#cbd3db}
-@media(max-width:1080px){.nav{gap:11px;font-size:11px}.hero-inner{padding-left:43vw}.person{left:-90px;height:710px;bottom:-50px}h1{font-size:76px}.brasil{margin-left:110px}}@media(max-width:760px){.topbar{height:72px;padding:0 16px}.monogram{font-size:43px;letter-spacing:-10px}.brandtext strong{font-size:22px}.brandtext small{font-size:8px;letter-spacing:4px}.nav{display:none}.hero{min-height:830px}.landscape{background-position:53% center;background-image:linear-gradient(180deg,rgba(2,13,25,.12) 0%,rgba(2,13,25,.3) 34%,rgba(2,13,25,.89) 64%,#041423 100%),url('assets/cenario.png')}.person{height:540px;bottom:auto;top:0;left:50%;transform:translateX(-50%);filter:drop-shadow(0 4px 20px #0007)}.hero-inner{min-height:830px;align-items:flex-end;padding:410px 20px 65px}.copy{margin:0;max-width:100%;width:100%;text-align:center}.eyebrow{font-size:11px;letter-spacing:2px}h1{font-size:clamp(52px,13vw,76px);letter-spacing:-4px;margin-top:8px}.brasil{font-size:17px;letter-spacing:11px;margin:3px auto 0}.lead{font-size:16px;margin:17px auto 22px;max-width:400px}.actions{justify-content:center}.btn{font-size:11px;padding:14px 13px}.bottomline{display:none}}@media(max-width:390px){.person{height:490px}.hero-inner{padding-top:380px}.hero{min-height:790px}.hero-inner{min-height:790px}h1{font-size:51px}}
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Roger Rio Brasil | Rogerio Pires</title>
+<meta name="description" content="Rogerio Pires: jornalista, professor e pesquisador. Comentarista da Jovem Pan News Rio e autor na Revista Timeline. Fato, dado e opinião.">
+<meta name="theme-color" content="#050D18">
+<link rel="icon" href="assets/marca/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/marca/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/marca/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Roger Rio Brasil">
+<meta property="og:title" content="Roger Rio Brasil | Rogerio Pires">
+<meta property="og:description" content="Fato, dado e opinião. Jornalismo, educação, inovação e pesquisa, do Rio para o Brasil.">
+<meta property="og:url" content="https://rogerrio.com.br/">
+<meta property="og:image" content="https://rogerrio.com.br/assets/marca/compartilhamento.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@rogerrioX">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Inter:wght@400;600&display=swap">
+<link rel="preload" as="image" href="assets/cenario.webp">
+<style>
+/* Identidade: ver DESIGN.md. Azul-noite, branco quente e um dourado por tela; Montserrat na marca, Inter no texto; cantos retos. */
+:root{
+  color-scheme:dark;
+  --noite:#050D18; --sup:#0B1A2B; --sup2:#11243A; --branco:#F5F2EC; --sec:#B7C0CB; --ouro:#D9A84E; --ouro-claro:#F1C66A;
+  --f-marca:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-texto:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --gut:clamp(20px,4vw,64px);
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:90px}
+body{margin:0;background:var(--noite);color:var(--branco);font:17px/1.6 var(--f-texto);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%}
+:focus-visible{outline:2px solid var(--ouro);outline-offset:3px}
+h1,h2,h3{font-family:var(--f-marca);text-wrap:balance}
 
-/* Etapa 2: conteúdo adicionado sem modificar a composição da abertura */
-.section-wrap{max-width:1400px;margin:auto;padding:65px clamp(20px,4vw,70px)}.kicker{font-size:12px;letter-spacing:2.5px;color:var(--gold);font-weight:800;text-transform:uppercase}.section-title{font:700 clamp(30px,3.6vw,50px)/1.12 Georgia,serif;margin:12px 0 26px}.muted{color:#bac6d2;line-height:1.7}.pillars{background:#051a2c;border-top:1px solid #ffffff20}.pillar-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}.pillar{background:#061626;border:1px solid #ffffff25;overflow:hidden;display:flex;flex-direction:column;min-height:365px}.pillar-art{height:132px;position:relative;overflow:hidden;background:radial-gradient(circle at 70% 20%,#18436a,#07192b 65%);border-bottom:1px solid #ffffff20}.pillar-art:before{content:'';position:absolute;width:155px;height:155px;border:2px solid #d9aa5266;transform:rotate(28deg);left:35%;top:20%}.pillar-art:after{content:attr(data-symbol);position:absolute;right:23px;top:14px;color:#f1bf5b;font:700 80px Georgia,serif;opacity:.65}.pillar:nth-child(2) .pillar-art{background:linear-gradient(135deg,#0a2b39,#185568,#041626)}.pillar:nth-child(3) .pillar-art{background:linear-gradient(130deg,#081a34,#193969,#041626)}.pillar:nth-child(4) .pillar-art{background:linear-gradient(130deg,#092134,#29465a,#041626)}.pillar-body{padding:23px;display:flex;flex:1;flex-direction:column}.pillar h3{font-size:19px;margin:0 0 12px}.pillar p{font-size:14px;color:#c8d1da;line-height:1.6;margin:0 0 18px}.pillar a{margin-top:auto;color:var(--gold);font-size:12px;font-weight:800;letter-spacing:.5px}.purpose{background:linear-gradient(115deg,#092239,#041423 70%);border-block:1px solid #ffffff20}.purpose-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.purpose h2{font:700 clamp(34px,4vw,57px)/1.08 Georgia,serif;margin:10px 0}.purpose h2 span{color:var(--gold)}.purpose p{line-height:1.8;color:#c9d5de}.features{background:#041321}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.feature{border:1px solid #ffffff25;background:#081c30;padding:25px;min-height:220px}.feature .type{font-size:11px;color:var(--gold);letter-spacing:1.5px;text-transform:uppercase}.feature h3{font:700 23px/1.22 Georgia,serif;margin:14px 0}.feature p{font-size:14px;line-height:1.6;color:#c7d2dc}.feature a{color:var(--gold);font-weight:700;font-size:13px}.contact{border-top:1px solid #ffffff25;background:#071b2b}.contact-flex{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.contact h2{font:700 34px Georgia,serif;margin:8px 0}.site-footer{padding:25px clamp(20px,4vw,70px);border-top:1px solid #ffffff25;color:#9baab8;font-size:12px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.site-footer strong{color:var(--gold)}.nav-mobile{display:none}
-@media(max-width:1050px){.pillar-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:760px){.nav-mobile{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;padding:15px;background:#071d2f;border-bottom:1px solid #ffffff20}.nav-mobile a{font-size:12px;color:#e6edf3}.section-wrap{padding:45px 20px}.pillar-grid,.feature-grid,.purpose-grid{grid-template-columns:1fr}.pillar{min-height:310px}.purpose-grid{gap:15px}.contact h2{font-size:27px}}
+/* topo */
+.topbar{position:sticky;top:0;z-index:20;background:var(--noite);display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px var(--gut)}
+.brand{display:block;line-height:0}
+.brand img{width:220px;height:auto}
+.nav{display:flex;gap:clamp(14px,1.8vw,28px);font-size:15px}
+.nav a{text-decoration:none;color:var(--sec)}
+.nav a:hover{color:var(--branco)}
+.menu{display:none;position:relative}
+.menu summary{list-style:none;cursor:pointer;font:600 15px var(--f-texto);padding:10px 14px;border:1px solid var(--sup2)}
+.menu summary::-webkit-details-marker{display:none}
+.menu nav{position:absolute;right:0;top:calc(100% + 8px);background:var(--sup);display:flex;flex-direction:column;min-width:200px;padding:8px 0}
+.menu nav a{text-decoration:none;padding:12px 20px;font-size:16px}
 
-.brand-logo{display:block;width:238px;height:auto;max-height:72px;object-fit:contain;object-position:left center}.topbar{min-height:88px}.brand{min-width:238px}.purpose-grid{grid-template-columns:.8fr 1.2fr}.purpose-grid p{font-size:16px}.signature{font-family:Georgia,serif;color:var(--gold)!important;font-size:28px!important;font-style:italic;margin-bottom:0}.hub-feature{background:radial-gradient(circle at 82% 35%,#103958 0,#071d30 36%,#041423 75%);border-top:1px solid #ffffff26}.hub-layout{display:grid;grid-template-columns:1.35fr .75fr;gap:70px;align-items:center}.hub-layout .section-title em{color:var(--gold);font-style:normal}.hub-layout .muted{font-size:16px;max-width:690px}.hub-panel{min-height:340px;padding:38px;border:1px solid #f1bf5b66;background:linear-gradient(135deg,#10334b,#061624);display:flex;flex-direction:column;justify-content:center}.hub-icon{font-size:65px;color:var(--gold)}.hub-panel h3{font:700 30px Georgia,serif;margin:15px 0}.hub-panel p{line-height:1.65;color:#d0d9df}.hub-feature .btn{display:inline-block;margin-top:14px}
-@media(max-width:760px){.brand{min-width:0}.brand-logo{width:185px;max-height:62px}.hub-layout{grid-template-columns:1fr;gap:22px}.hub-panel{min-height:240px}.purpose-grid{grid-template-columns:1fr}.hero .copy{isolation:isolate}}
+/* abertura: composição da foto mantida */
+.hero{position:relative;min-height:690px;isolation:isolate;overflow:hidden;background:var(--noite)}
+.landscape{position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(5,13,24,.04) 0%,rgba(5,13,24,.3) 29%,rgba(5,13,24,.8) 43%,rgba(5,13,24,.68) 64%,rgba(5,13,24,.14) 100%),url('assets/cenario.webp');background-position:center;background-size:cover;z-index:-2}
+.landscape:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--noite) 0%,transparent 29%)}
+.person{position:absolute;bottom:-90px;left:clamp(-125px,-5vw,-35px);height:min(800px,112%);width:auto;max-width:none;object-fit:contain;z-index:-1}
+.hero-inner{max-width:1460px;margin:auto;min-height:690px;display:flex;align-items:center;padding:50px var(--gut);padding-left:clamp(490px,39vw,640px)}
+.copy{max-width:620px}
+.lockup{display:inline-flex;flex-direction:column;margin:0;font-weight:600;line-height:1;letter-spacing:-.01em;font-size:clamp(56px,6.4vw,96px);text-shadow:0 3px 18px rgba(0,0,0,.5)}
+.lockup .rio{color:var(--ouro)}
+.lockup .br{display:flex;align-items:center;gap:18px;font-weight:300;font-size:.27em;letter-spacing:.62em;margin-top:14px;padding-left:.62em}
+.lockup .br::before,.lockup .br::after{content:"";flex:1;height:2px;background:var(--ouro)}
+.slogan{font:500 clamp(22px,2.2vw,30px)/1.3 var(--f-marca);margin:28px 0 8px}
+.lead{font-size:19px;line-height:1.55;margin:0 0 30px;color:var(--branco);max-width:28em;text-shadow:0 2px 10px rgba(0,0,0,.6)}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:16px 22px;font:600 16px var(--f-texto);text-decoration:none;border:1.5px solid var(--branco);background:rgba(5,13,24,.6)}
+.btn.primary{background:var(--ouro);border-color:var(--ouro);color:var(--noite)}
+.btn:hover{background:var(--branco);border-color:var(--branco);color:var(--noite)}
 
-.visit-counter{display:inline-flex;align-items:center;gap:8px;line-height:1.4}.visit-counter img{display:block;height:20px;width:auto}.visit-counter-note{font-size:10px;color:#9baab8}.site-footer{align-items:center}
-</style></head><body><header class="topbar"><a class="brand" href="#inicio" aria-label="RogerRio Brasil, início"><img class="brand-logo" src="assets/marca-rogerrio.png" alt="RR RogerRio Brasil | Ideias que conectam pessoas e realidade"></a><nav class="nav" aria-label="Navegação principal"><a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#jornalismo">Jornalismo</a><a href="#hub-rj">HUB RJ</a><a href="#pesquisa">Pesquisa</a><a href="#educacao">Educação</a><a href="#contato">Contato</a></nav></header><main><section class="hero" id="inicio"><div class="landscape" aria-hidden="true"></div><img class="person" src="assets/personagem.png" alt="Retrato de Rogerio Pires"/><div class="hero-inner"><div class="copy"><div class="eyebrow">RIO DE JANEIRO NO CORAÇÃO.<br><span>BRASIL</span> NO HORIZONTE.</div><h1>Roger<span>Rio</span></h1><div class="brasil">BRASIL</div><p class="lead">Jornalismo. Educação. Inovação. Pesquisa.<br>Por um país mais livre, justo e próspero.</p><div class="actions"><a class="btn primary" href="#atuacao">CONHEÇA MEU TRABALHO →</a><a class="btn" href="https://www.instagram.com/rogerrio/" target="_blank" rel="noopener noreferrer">ACOMPANHE NO INSTAGRAM ↗</a></div></div></div><div class="bottomline">DO RIO PARA UM<br>BRASIL MAIS FORTE</div></section><nav class="nav-mobile" aria-label="Navegação no celular"><a href="#atuacao">Atuação</a><a href="#hub-rj">HUB RJ</a><a href="#pesquisa">Pesquisa</a><a href="#educacao">Educação</a><a href="#contato">Contato</a></nav>
-<section class="pillars" id="atuacao"><div class="section-wrap"><span class="kicker">Áreas de atuação</span><h2 class="section-title">Ideias que conectam pessoas e realidade.</h2><div class="pillar-grid">
-<article class="pillar" id="jornalismo"><div class="pillar-art" data-symbol="✎" aria-hidden="true"></div><div class="pillar-body"><h3>JORNALISMO</h3><p>Jornalista e autor na Revista Timeline, com produção de artigos, entrevistas e análises sobre política e temas nacionais. Participação em programas de opinião e cobertura de acontecimentos relevantes.</p><a href="https://revistatimeline.com/" target="_blank" rel="noopener">VER ARTIGOS ↗</a></div></article>
-<article class="pillar" id="hub-rj"><div class="pillar-art" data-symbol="✧" aria-hidden="true"></div><div class="pillar-body"><h3>HUB RJ DE INOVAÇÃO</h3><p>Coordenador do HUB RJ de Inovação, iniciativa voltada à conexão entre startups, universidades, empresas e instituições. Experiência na articulação de iniciativas de empreendedorismo e inovação no Estado do Rio de Janeiro.</p><a href="#hub-detalhes">SAIBA MAIS ↓</a></div></article>
-<article class="pillar" id="pesquisa"><div class="pillar-art" data-symbol="▥" aria-hidden="true"></div><div class="pillar-body"><h3>PESQUISA E DADOS</h3><p>Mestre pelo PROFNIT/UFRJ, com pesquisas e projetos em inovação e propriedade intelectual. Desenvolve estudos eleitorais com bases documentadas, incluindo o Observatório Eleitoral e análises das apurações presidenciais.</p><a href="https://observatorio.revistatimeline.com/" target="_blank" rel="noopener">ACESSAR ESTUDOS ↗</a></div></article>
-<article class="pillar" id="educacao"><div class="pillar-art" data-symbol="◇" aria-hidden="true"></div><div class="pillar-body"><h3>EDUCAÇÃO</h3><p>Professor da FAETEC desde 1999, com experiência em ensino, coordenação e direção de tecnologia. Ex-vice-presidente da FAETEC e ex-presidente da Fundação CECIERJ, com atuação em educação pública, tecnologia e formação profissional.</p><a href="#sobre">CONHEÇA A TRAJETÓRIA ↓</a></div></article>
-</div></div></section>
-<section class="purpose" id="sobre"><div class="section-wrap purpose-grid"><div><span class="kicker">Propósito</span><h2>CONHECIMENTO QUE CONSTRÓI <span>UM BRASIL MELHOR</span></h2></div><div><p>Sou jornalista, professor e pesquisador. Minha trajetória começou na educação tecnológica, em 1999, na FAETEC, onde atuei em sala de aula e em funções de gestão, incluindo a direção de tecnologia e a vice-presidência. Também presidi a Fundação CECIERJ, ligada à educação científica e à formação de professores.</p><p>Minha formação reúne Ciência da Computação, pós-graduação em Gestão de Projetos pela PUC-Rio e mestrado no PROFNIT/UFRJ. Recebi ainda o título honorífico de Doutor Honoris Causa, distinto de um doutorado acadêmico.</p><p>Na inovação, coordeno o HUB RJ de Inovação e trabalho na aproximação entre conhecimento, empreendedorismo e oportunidades. No jornalismo, produzo análises, entrevistas e pesquisas para a Revista Timeline.</p><p class="signature">Rogerio Pires</p><p class="muted">Jornalista · Professor · Mestre · Doutor Honoris Causa</p></div></div></section>
-<section class="hub-feature" id="hub-detalhes"><div class="section-wrap hub-layout"><div><span class="kicker">Inovação no Rio de Janeiro</span><h2 class="section-title">HUB RJ de <em>Inovação</em></h2><p class="muted">Uma frente importante da minha atuação é conectar pessoas, conhecimento e oportunidades no ecossistema fluminense de inovação. Como coordenador do HUB RJ de Inovação, participo da articulação de iniciativas voltadas a startups, empreendedorismo, universidades, empresas e poder público.</p><p class="muted">Minha experiência na educação tecnológica e na gestão pública orienta esse trabalho: aproximar a formação de talentos das necessidades reais de quem empreende e desenvolve soluções.</p><a class="btn primary" href="#contato">CONHEÇA MINHA ATUAÇÃO →</a></div><div class="hub-panel"><span class="hub-icon">✦</span><span class="kicker">HUB RJ</span><h3>Conectar ideias. Abrir caminhos.</h3><p>Inovação, formação, empreendedorismo e articulação institucional no Rio de Janeiro.</p></div></div></section>
-<section class="features" id="destaques"><div class="section-wrap"><span class="kicker">Destaques</span><h2 class="section-title">Projetos e publicações</h2><div class="feature-grid">
-<article class="feature"><span class="type">Pesquisa</span><h3>Observatório Eleitoral</h3><p>Comparações entre pesquisas eleitorais e resultados oficiais, com metodologia e documentação.</p><a href="https://observatorio.revistatimeline.com/" target="_blank" rel="noopener">CONHECER PROJETO ↗</a></article>
-<article class="feature"><span class="type">Estudo</span><h3>Apurações presidenciais 2014–2026</h3><p>Estudo de séries temporais e comportamento das curvas de apuração, com limites metodológicos explicitados.</p><a href="https://rogeriotpires-spec.github.io/apuracao-timeline/" target="_blank" rel="noopener">VER PROJETO ↗</a></article>
-<article class="feature"><span class="type">Jornalismo</span><h3>Revista Timeline</h3><p>Artigos, análises e entrevistas sobre os acontecimentos políticos e sociais do Brasil.</p><a href="https://revistatimeline.com/" target="_blank" rel="noopener">ACESSAR REVISTA ↗</a></article>
-</div></div></section>
-<section class="contact" id="contato"><div class="section-wrap contact-flex"><div><span class="kicker">Contato e redes</span><h2>Vamos conversar?</h2><p class="muted">Acompanhe artigos, pesquisas e novidades.</p></div><div class="actions"><a class="btn primary" href="https://www.instagram.com/rogerrio/" target="_blank" rel="noopener">INSTAGRAM ↗</a><a class="btn" href="https://revistatimeline.com/" target="_blank" rel="noopener">REVISTA TIMELINE ↗</a></div></div></section>
-</main><footer class="site-footer"><div><strong>RR RogerRio Brasil</strong> · Ideias que conectam pessoas e realidade</div><div>© 2026 Rogerio Pires · Rio de Janeiro, Brasil</div><div class="visit-counter" title="Contagem de acessos desde 11/10/2026. Não representa visitantes únicos."><a href="https://hits.sh/rogerrio.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Consultar estatísticas de acessos"><img src="https://hits.sh/rogerrio.com.br.svg?style=flat-square&amp;label=Acessos&amp;color=f1bf5b&amp;labelColor=071b2b" alt="Total de acessos" height="20" loading="eager" decoding="async" referrerpolicy="no-referrer" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>Contador temporariamente indisponível</span></a><span class="visit-counter-note">desde 11/10/2026</span></div></footer></body></html>
+/* seções */
+.wrap{max-width:1280px;margin:auto;padding:112px var(--gut)}
+.sec-title{font-weight:600;font-size:clamp(30px,3.4vw,46px);line-height:1.12;margin:0 0 40px}
+.muted{color:var(--sec)}
+
+.areas{background:var(--noite)}
+.area-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.area{background:var(--sup);padding:28px 26px;display:flex;flex-direction:column}
+.area .fato{font:500 15px/1.4 var(--f-marca);color:var(--ouro);margin:0 0 18px}
+.area h3{font-size:22px;font-weight:600;margin:0 0 12px}
+.area p{font-size:16px;color:var(--sec);margin:0 0 22px}
+.area a{margin-top:auto;font-weight:600;font-size:15px;color:var(--branco);text-decoration:none;border-bottom:1.5px solid var(--ouro);align-self:flex-start;padding-bottom:2px}
+
+.sobre{background:var(--sup)}
+.sobre-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:start}
+.sobre-grid p{color:#D5DBE2;margin:0 0 18px;max-width:62ch}
+.assinatura{font:500 26px var(--f-marca);color:var(--ouro)!important;margin-top:30px!important}
+.titulos{color:var(--sec)!important;font-size:15px}
+
+.hub-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:72px;align-items:center}
+.hub-grid p{color:var(--sec);max-width:62ch}
+.conecta{list-style:none;margin:0;padding:0;border-left:2px solid var(--ouro)}
+.conecta li{font:500 20px/1.3 var(--f-marca);padding:14px 0 14px 24px}
+.conecta-h{font:500 15px var(--f-texto);color:var(--sec);margin:0 0 14px}
+
+.projetos{background:var(--sup)}
+.proj-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.proj{background:var(--noite);padding:30px 28px;display:flex;flex-direction:column}
+.proj .tipo{font-size:15px;color:var(--ouro);margin:0 0 10px}
+.proj h3{font-size:24px;font-weight:600;line-height:1.2;margin:0 0 12px}
+.proj p{color:var(--sec);font-size:16px;margin:0 0 22px}
+.proj a{margin-top:auto;font-weight:600;font-size:15px;text-decoration:none;border-bottom:1.5px solid var(--ouro);align-self:flex-start;padding-bottom:2px}
+
+.contato-flex{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
+.contato h2{font-weight:600;font-size:clamp(30px,3.4vw,46px);margin:0 0 8px}
+
+.site-footer{background:var(--noite);border-top:1px solid var(--sup2);padding:28px var(--gut) 36px;color:var(--sec);font-size:14px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.foot-brand{display:flex;align-items:center;gap:14px}
+.foot-brand img{width:44px;height:auto}
+.foot-brand strong{color:var(--branco);font:600 15px var(--f-marca)}
+.visit-counter{display:inline-flex;align-items:center;gap:8px;line-height:1.4}
+.visit-counter img{display:block;height:20px;width:auto}
+
+@media(max-width:1080px){
+  .nav{gap:14px;font-size:14px}
+  .hero-inner{padding-left:43vw}
+  .person{left:-90px;height:710px;bottom:-50px}
+  .area-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proj-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:860px){
+  .nav{display:none}
+  .menu{display:block}
+}
+@media(max-width:760px){
+  body{font-size:16px}
+  .topbar{padding:10px 16px}
+  .brand img{width:180px}
+  .hero{min-height:840px}
+  .landscape{background-position:53% center;background-image:linear-gradient(180deg,rgba(5,13,24,.12) 0%,rgba(5,13,24,.3) 34%,rgba(5,13,24,.9) 62%,var(--noite) 100%),url('assets/cenario.webp')}
+  .person{height:540px;bottom:auto;top:0;left:50%;transform:translateX(-50%)}
+  .hero-inner{min-height:840px;align-items:flex-end;padding:420px 20px 56px}
+  .copy{margin:0;max-width:100%;width:100%;text-align:center}
+  .lockup{font-size:clamp(46px,13vw,64px)}
+  .lockup .br{gap:12px}
+  .slogan{font-size:21px;margin-top:22px}
+  .lead{font-size:16px;margin:0 auto 24px;max-width:24em}
+  .actions{justify-content:center}
+  .btn{padding:14px 18px;font-size:15px}
+  .wrap{padding:72px 20px}
+  .sec-title{margin-bottom:28px}
+  .area-grid,.proj-grid,.sobre-grid,.hub-grid{grid-template-columns:1fr}
+  .sobre-grid,.hub-grid{gap:24px}
+}
+@media(max-width:390px){
+  .person{height:490px}
+  .hero,.hero-inner{min-height:800px}
+  .hero-inner{padding-top:390px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#inicio" aria-label="Roger Rio Brasil, início"><img src="assets/marca/logo-horizontal.svg" alt="Roger Rio Brasil" width="220" height="59"></a>
+  <nav class="nav" aria-label="Navegação principal"><a href="#atuacao">Atuação</a><a href="#sobre">Sobre</a><a href="#hub-rj">HUB RJ</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a></nav>
+  <details class="menu"><summary aria-label="Abrir menu">Menu</summary><nav aria-label="Navegação no celular"><a href="#atuacao">Atuação</a><a href="#sobre">Sobre</a><a href="#hub-rj">HUB RJ</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a></nav></details>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="landscape" aria-hidden="true"></div>
+  <img class="person" src="assets/personagem.webp" alt="Retrato de Rogerio Pires" width="933" height="1400" fetchpriority="high">
+  <div class="hero-inner"><div class="copy">
+    <h1 class="lockup"><span>ROGER <span class="rio">RIO</span></span><span class="br">BRASIL</span></h1>
+    <p class="slogan">Fato, dado e opinião.</p>
+    <p class="lead">Sou jornalista, professor e pesquisador. Comento política na Jovem Pan News Rio e escrevo na Revista Timeline.</p>
+    <div class="actions"><a class="btn primary" href="#atuacao">Conheça meu trabalho</a><a class="btn" href="https://www.instagram.com/rogerrio/" target="_blank" rel="noopener noreferrer">Siga no Instagram ↗</a></div>
+  </div></div>
+</section>
+
+<section class="areas" id="atuacao"><div class="wrap">
+  <h2 class="sec-title">Onde eu atuo</h2>
+  <div class="area-grid">
+    <article class="area" id="jornalismo"><p class="fato">Jovem Pan News Rio · Revista Timeline</p><h3>Jornalismo</h3><p>Comentarista da Jovem Pan News Rio e autor na Revista Timeline, com artigos, entrevistas e análises sobre política e temas nacionais.</p><a href="https://revistatimeline.com/" target="_blank" rel="noopener">Ler artigos ↗</a></article>
+    <article class="area"><p class="fato">Startups, universidades e governo</p><h3>HUB RJ de Inovação</h3><p>Coordeno o HUB RJ de Inovação, que conecta startups, universidades, empresas e instituições em todas as regiões do Estado do Rio de Janeiro.</p><a href="#hub-rj">Saiba mais ↓</a></article>
+    <article class="area" id="pesquisa"><p class="fato">Mestre pelo PROFNIT/UFRJ</p><h3>Pesquisa e dados</h3><p>Pesquisas em inovação e propriedade intelectual, e estudos eleitorais com bases documentadas, como o Observatório Eleitoral e a análise das apurações presidenciais.</p><a href="https://observatorio.revistatimeline.com/" target="_blank" rel="noopener">Acessar estudos ↗</a></article>
+    <article class="area" id="educacao"><p class="fato">Professor da FAETEC desde 1999</p><h3>Educação</h3><p>Ensino, coordenação e direção de tecnologia na FAETEC, onde fui vice-presidente. Também presidi a Fundação CECIERJ, de educação científica e formação de professores.</p><a href="#sobre">Conheça a trajetória ↓</a></article>
+  </div>
+</div></section>
+
+<section class="sobre" id="sobre"><div class="wrap sobre-grid">
+  <div><h2 class="sec-title">Sobre mim</h2></div>
+  <div>
+    <p>Sou jornalista, professor e pesquisador. Minha trajetória começou na educação tecnológica, em 1999, na FAETEC, onde atuei em sala de aula e em funções de gestão, incluindo a direção de tecnologia e a vice-presidência. Também presidi a Fundação CECIERJ, ligada à educação científica e à formação de professores.</p>
+    <p>Minha formação reúne Ciência da Computação, pós-graduação em Gestão de Projetos pela PUC-Rio e mestrado no PROFNIT/UFRJ. Recebi ainda o título honorífico de Doutor Honoris Causa, distinto de um doutorado acadêmico.</p>
+    <p>Na inovação, coordeno o HUB RJ de Inovação e trabalho na aproximação entre conhecimento, empreendedorismo e oportunidades. No jornalismo, comento política na Jovem Pan News Rio e produzo análises, entrevistas e pesquisas para a Revista Timeline.</p>
+    <p class="assinatura">Rogerio Pires</p>
+    <p class="titulos">Jornalista · Professor · Mestre · Doutor Honoris Causa</p>
+  </div>
+</div></section>
+
+<section id="hub-rj"><div class="wrap hub-grid">
+  <div>
+    <h2 class="sec-title">HUB RJ de Inovação</h2>
+    <p>Uma frente importante da minha atuação é conectar pessoas, conhecimento e oportunidades no ecossistema fluminense de inovação. Como coordenador do HUB RJ de Inovação, participo da articulação de iniciativas voltadas a startups, empreendedorismo, universidades, empresas e poder público.</p>
+    <p>Minha experiência na educação tecnológica e na gestão pública orienta esse trabalho: aproximar a formação de talentos das necessidades reais de quem empreende e desenvolve soluções.</p>
+    <a class="btn primary" href="#contato" style="margin-top:12px">Fale comigo</a>
+  </div>
+  <div>
+    <p class="conecta-h">O HUB RJ aproxima</p>
+    <ul class="conecta"><li>Startups</li><li>Universidades</li><li>Empresas</li><li>Poder público</li></ul>
+  </div>
+</div></section>
+
+<section class="projetos" id="projetos"><div class="wrap">
+  <h2 class="sec-title">Projetos e publicações</h2>
+  <div class="proj-grid">
+    <article class="proj"><p class="tipo">Pesquisa</p><h3>Observatório Eleitoral</h3><p>Comparações entre pesquisas eleitorais e resultados oficiais, com metodologia e documentação.</p><a href="https://observatorio.revistatimeline.com/" target="_blank" rel="noopener">Conhecer o projeto ↗</a></article>
+    <article class="proj"><p class="tipo">Estudo</p><h3>Apurações presidenciais 2014 a 2026</h3><p>Séries temporais e comportamento das curvas de apuração, com os limites metodológicos explicitados.</p><a href="https://rogeriotpires-spec.github.io/apuracao-timeline/" target="_blank" rel="noopener">Ver o estudo ↗</a></article>
+    <article class="proj"><p class="tipo">Jornalismo</p><h3>Revista Timeline</h3><p>Artigos, análises e entrevistas sobre os acontecimentos políticos e sociais do Brasil.</p><a href="https://revistatimeline.com/" target="_blank" rel="noopener">Acessar a revista ↗</a></article>
+  </div>
+</div></section>
+
+<section class="contato" id="contato"><div class="wrap contato-flex">
+  <div><h2>Vamos conversar?</h2><p class="muted" style="margin:0">Acompanhe artigos, pesquisas e comentários nas redes.</p></div>
+  <div class="actions"><a class="btn primary" href="https://www.instagram.com/rogerrio/" target="_blank" rel="noopener">Instagram ↗</a><a class="btn" href="https://x.com/rogerrioX" target="_blank" rel="noopener">X ↗</a><a class="btn" href="https://revistatimeline.com/" target="_blank" rel="noopener">Revista Timeline ↗</a></div>
+</div></section>
+</main>
+
+<footer class="site-footer">
+  <div class="foot-brand"><img src="assets/marca/monograma.svg" alt="" width="44" height="44"><div><strong>Roger Rio Brasil</strong><br>Fato, dado e opinião</div></div>
+  <div>© 2026 Rogerio Pires · Rio de Janeiro, Brasil</div>
+  <div class="visit-counter" title="Contagem de acessos desde 11/10/2026. Não representa visitantes únicos."><a href="https://hits.sh/rogerrio.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Consultar estatísticas de acessos"><img src="https://hits.sh/rogerrio.com.br.svg?style=flat-square&amp;label=Acessos&amp;color=d9a84e&amp;labelColor=0b1a2b" alt="Total de acessos" height="20" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>Contador temporariamente indisponível</span></a><span>desde 11/10/2026</span></div>
+</footer>
+<script>document.querySelectorAll(".menu nav a").forEach(a=>a.addEventListener("click",()=>a.closest("details").open=false))</script>
+</body>
+</html>
