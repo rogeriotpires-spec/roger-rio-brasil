@@ -111,6 +111,11 @@ h3{font-family:var(--f-marca);text-wrap:balance}
 
 .contato-flex{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
 .contato h2{font-size:clamp(34px,3.8vw,52px);margin:0 0 8px}
+.email{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.email a{font:400 clamp(24px,2.6vw,34px)/1.2 var(--f-nome);color:var(--tinta);text-decoration:none;border-bottom:2px solid var(--ouro);overflow-wrap:anywhere}
+.copiar{font:600 14px var(--f-texto);padding:8px 14px;border:1.5px solid var(--tinta);background:transparent;color:var(--tinta);cursor:pointer}
+.copiar:hover{background:var(--tinta);color:var(--papel)}
+.copiado{font-size:14px;color:var(--ouro-txt)}
 
 .site-footer{background:var(--papel);border-top:1px solid var(--sup2);padding:28px var(--gut) 36px;color:var(--sec);font-size:14px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
 .foot-brand{display:flex;align-items:center;gap:14px}
@@ -219,7 +224,9 @@ h3{font-family:var(--f-marca);text-wrap:balance}
 </div></section>
 
 <section class="contato" id="contato"><div class="wrap contato-flex">
-  <div><h2>Vamos conversar?</h2><p class="muted" style="margin:0">Acompanhe artigos, pesquisas e comentários nas redes.</p></div>
+  <div><h2>Vamos conversar?</h2><p class="muted" style="margin:0 0 18px">Convites para entrevistas, palestras e parcerias, ou só uma conversa.</p>
+    <div class="email"><a href="mailto:contato@rogerrio.com.br">contato@rogerrio.com.br</a><button type="button" class="copiar" data-email="contato@rogerrio.com.br">Copiar</button><span class="copiado" role="status" aria-live="polite"></span></div>
+    <p class="muted" style="margin:14px 0 0;font-size:15px">Acompanhe também artigos, pesquisas e comentários nas redes.</p></div>
   <div class="actions"><a class="btn primary" href="https://www.instagram.com/rogerrio/" target="_blank" rel="noopener">Instagram ↗</a><a class="btn" href="https://x.com/rogerrioX" target="_blank" rel="noopener">X ↗</a><a class="btn" href="https://revistatimeline.com/" target="_blank" rel="noopener">Revista Timeline ↗</a></div>
 </div></section>
 </main>
@@ -229,6 +236,7 @@ h3{font-family:var(--f-marca);text-wrap:balance}
   <div>© 2026 Rogerio Pires · Rio de Janeiro, Brasil</div>
   <div class="visit-counter" title="Contagem de acessos desde 11/10/2026. Não representa visitantes únicos."><a href="https://hits.sh/rogerrio.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Consultar estatísticas de acessos"><img src="https://hits.sh/rogerrio.com.br.svg?style=flat-square&amp;label=Acessos&amp;color=9c7a3c&amp;labelColor=14213d" alt="Total de acessos" height="20" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>Contador temporariamente indisponível</span></a><span>desde 11/10/2026</span></div>
 </footer>
+<script>document.querySelectorAll(".copiar").forEach(b=>b.addEventListener("click",()=>{const e=b.dataset.email,st=b.nextElementSibling,ok=()=>{st.textContent="Copiado";setTimeout(()=>st.textContent="",2500)};if(navigator.clipboard)navigator.clipboard.writeText(e).then(ok).catch(()=>{const r=document.createRange();r.selectNodeContents(b.previousElementSibling);getSelection().removeAllRanges();getSelection().addRange(r)});else{const r=document.createRange();r.selectNodeContents(b.previousElementSibling);getSelection().removeAllRanges();getSelection().addRange(r)}}))</script>
 <script>document.querySelectorAll(".menu nav a").forEach(a=>a.addEventListener("click",()=>a.closest("details").open=false))</script>
 </body>
 </html>
