@@ -23,7 +23,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@300;500&family=Inter:wght@400;600&display=swap">
-<link rel="preload" as="image" href="assets/cenario.webp">
 <style>
 /* Identidade: ver DESIGN.md. Azul-noite, branco quente e um dourado por tela; DM Serif Display no nome e títulos, Montserrat no BRASIL e slogan, Inter no texto; cantos retos. */
 :root{
@@ -56,19 +55,16 @@ h3{font-family:var(--f-marca);text-wrap:balance}
 .menu nav{position:absolute;right:0;top:calc(100% + 8px);background:var(--sup);display:flex;flex-direction:column;min-width:200px;padding:8px 0}
 .menu nav a{text-decoration:none;padding:12px 20px;font-size:16px}
 
-/* abertura: composição da foto mantida */
-.hero{position:relative;min-height:690px;isolation:isolate;overflow:hidden;background:var(--noite)}
-.landscape{position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(5,13,24,.04) 0%,rgba(5,13,24,.3) 29%,rgba(5,13,24,.8) 43%,rgba(5,13,24,.68) 64%,rgba(5,13,24,.14) 100%),url('assets/cenario.webp');background-position:center;background-size:cover;z-index:-2}
-.landscape:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--noite) 0%,transparent 29%)}
-.person{position:absolute;bottom:-90px;left:clamp(-125px,-5vw,-35px);height:min(800px,112%);width:auto;max-width:none;object-fit:contain;z-index:-1}
-.hero-inner{max-width:1460px;margin:auto;min-height:690px;display:flex;align-items:center;padding:50px var(--gut);padding-left:clamp(490px,39vw,640px)}
-.copy{max-width:620px}
-.lockup{display:inline-flex;flex-direction:column;margin:0;font-weight:400;line-height:1;letter-spacing:-.01em;font-size:clamp(64px,7.4vw,112px);text-shadow:0 3px 18px rgba(0,0,0,.5)}
+/* abertura tipográfica: sem foto até chegarem fotos reais de trabalho */
+.hero{background:var(--noite);border-bottom:1px solid var(--sup2)}
+.hero-inner{max-width:1280px;margin:auto;padding:120px var(--gut) 112px}
+.copy{max-width:760px}
+.lockup{display:inline-flex;flex-direction:column;margin:0;font-weight:400;line-height:1;letter-spacing:-.01em;font-size:clamp(72px,10vw,150px)}
 .lockup .rio{color:var(--ouro)}
-.lockup .br{display:flex;align-items:center;gap:18px;font:300 .24em var(--f-marca);letter-spacing:.62em;margin-top:.32em;padding-left:.62em}
+.lockup .br{display:flex;align-items:center;gap:18px;font:300 .2em var(--f-marca);letter-spacing:.62em;margin-top:.3em;padding-left:.62em}
 .lockup .br::before,.lockup .br::after{content:"";flex:1;height:2px;background:var(--ouro)}
 .slogan{font:500 clamp(22px,2.2vw,30px)/1.3 var(--f-marca);margin:28px 0 8px}
-.lead{font-size:19px;line-height:1.55;margin:0 0 30px;color:var(--branco);max-width:28em;text-shadow:0 2px 10px rgba(0,0,0,.6)}
+.lead{font-size:20px;line-height:1.55;margin:0 0 32px;color:var(--sec);max-width:30em}
 .actions{display:flex;gap:12px;flex-wrap:wrap}
 .btn{display:inline-block;padding:16px 22px;font:600 16px var(--f-texto);text-decoration:none;border:1.5px solid var(--branco);background:rgba(5,13,24,.6)}
 .btn.primary{background:var(--ouro);border-color:var(--ouro);color:var(--noite)}
@@ -119,8 +115,6 @@ h3{font-family:var(--f-marca);text-wrap:balance}
 
 @media(max-width:1080px){
   .nav{gap:14px;font-size:14px}
-  .hero-inner{padding-left:43vw}
-  .person{left:-90px;height:710px;bottom:-50px}
   .area-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .proj-grid{grid-template-columns:1fr 1fr}
 }
@@ -132,26 +126,16 @@ h3{font-family:var(--f-marca);text-wrap:balance}
   body{font-size:16px}
   .topbar{padding:10px 16px}
   .brand img{width:180px}
-  .hero{min-height:840px}
-  .landscape{background-position:53% center;background-image:linear-gradient(180deg,rgba(5,13,24,.12) 0%,rgba(5,13,24,.3) 34%,rgba(5,13,24,.9) 62%,var(--noite) 100%),url('assets/cenario.webp')}
-  .person{height:540px;bottom:auto;top:0;left:50%;transform:translateX(-50%)}
-  .hero-inner{min-height:840px;align-items:flex-end;padding:420px 20px 56px}
-  .copy{margin:0;max-width:100%;width:100%;text-align:center}
-  .lockup{font-size:clamp(54px,16vw,76px)}
+  .hero-inner{padding:72px 20px 64px}
+  .lockup{font-size:clamp(56px,17vw,80px)}
   .lockup .br{gap:12px}
   .slogan{font-size:21px;margin-top:22px}
-  .lead{font-size:16px;margin:0 auto 24px;max-width:24em}
-  .actions{justify-content:center}
+  .lead{font-size:17px;margin:0 0 24px}
   .btn{padding:14px 18px;font-size:15px}
   .wrap{padding:72px 20px}
   .sec-title{margin-bottom:28px}
   .area-grid,.proj-grid,.sobre-grid,.hub-grid{grid-template-columns:1fr}
   .sobre-grid,.hub-grid{gap:24px}
-}
-@media(max-width:390px){
-  .person{height:490px}
-  .hero,.hero-inner{min-height:800px}
-  .hero-inner{padding-top:390px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
@@ -165,8 +149,6 @@ h3{font-family:var(--f-marca);text-wrap:balance}
 
 <main>
 <section class="hero" id="inicio">
-  <div class="landscape" aria-hidden="true"></div>
-  <img class="person" src="assets/personagem.webp" alt="Retrato de Rogerio Pires" width="933" height="1400" fetchpriority="high">
   <div class="hero-inner"><div class="copy">
     <h1 class="lockup"><span>Roger<span class="rio">Rio</span></span><span class="br">BRASIL</span></h1>
     <p class="slogan">Fato, dado e opinião.</p>
