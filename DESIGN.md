@@ -3,19 +3,19 @@
 Identidade da marca pessoal de Rogerio Pires. Arquivos da logo em assets/marca/.
 
 ## Personalidade
-Autoridade carioca com alcance nacional. Sério, noturno, elegante; o dourado é o pôr do sol do Rio, usado com parcimônia.
+Clássico e sóbrio, como revista e livro impressos. Autoridade carioca com alcance nacional; o dourado envelhecido é o detalhe, nunca o fundo.
 
 ## Cores (papéis)
-- Fundo: #050D18 (azul-noite, quase preto, tirado do céu da logo)
-- Superfície: #0B1A2B (um degrau acima do fundo, para cartões e faixas)
-- Texto principal: #F5F2EC (branco quente, como o "Roger" da logo)
-- Texto secundário: #B7C0CB (contraste 9,5:1 sobre a superfície)
-- Acento dourado: #D9A84E (contraste 9:1 sobre o fundo). Só no botão principal, no "RIO" do nome e em no máximo um detalhe por tela.
-- Dourado claro (hover e realces): #F1C66A
-- Texto sobre dourado: #050D18
-- Versão clara (impressos, documentos): fundo #F5F2EC, texto #050D18, dourado escurecido #8A6420 para texto
+- Fundo: #F6F1E7 (marfim, tom de papel)
+- Superfície: #EDE5D6 (um degrau abaixo do fundo, para cartões e faixas)
+- Linha e borda discreta: #DCD2BF
+- Texto principal e botão principal: #14213D (marinho, contraste 14:1 sobre o fundo)
+- Texto secundário: #4A5468 (contraste 6,8:1)
+- Dourado envelhecido: #9C7A3C, só em letras grandes e traços: o "Rio" do nome, os traços do BRASIL, a assinatura.
+- Dourado para texto pequeno: #7A5C24 (contraste AA)
+- Versão escura da marca (redes, favicon): fundo #14213D, texto #F6F1E7, dourado #C9A45C
 
-Proibido: degradês decorativos, brilho metálico simulado em CSS, azul-royal genérico, mais de um dourado na mesma tela.
+Proibido: degradês decorativos, brilho metálico simulado, fundo escuro no site, mais de um dourado na mesma tela.
 
 ## Tipografia
 - Nome: sempre junto, "RogerRio", com "Rio" em dourado, para se ler Rogerio. Nunca "ROGER RIO" separado.
@@ -30,9 +30,9 @@ Proibido: degradês decorativos, brilho metálico simulado em CSS, azul-royal ge
 - Cantos retos (raio 0), como os cortes da logo. Botões retos.
 
 ## Componentes
-- Botão principal: fundo dourado, texto azul-noite, 16px semibold, caixa normal.
-- Botão secundário: contorno branco 1,5px, texto branco.
-- Links: dourado, sublinhado no hover.
+- Botão principal: fundo marinho, texto marfim, 16px semibold, caixa normal.
+- Botão secundário: contorno marinho 1,5px, texto marinho.
+- Links: texto marinho com sublinhado dourado.
 - Cartões: superfície #0B1A2B, sem borda e sem sombra; separação por tom.
 
 ## Imagem
