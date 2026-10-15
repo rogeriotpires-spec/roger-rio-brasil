@@ -98,9 +98,12 @@ h3{font-family:var(--f-marca);text-wrap:balance}
 .conecta li{font:500 20px/1.3 var(--f-marca);padding:14px 0 14px 24px}
 .conecta-h{font:500 15px var(--f-texto);color:var(--sec);margin:0 0 14px}
 
-.projetos{background:var(--sup)}
+.projetos{background:var(--papel)}
+.hub-sec{background:var(--sup)}
+.cecierj-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:72px;align-items:center}
+.cecierj-grid p{color:var(--sec);max-width:62ch}
 .proj-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.proj{background:var(--papel);padding:30px 28px;display:flex;flex-direction:column}
+.proj{background:var(--sup);padding:30px 28px;display:flex;flex-direction:column}
 .proj .tipo{font-size:15px;color:var(--ouro-txt);margin:0 0 10px}
 .proj h3{font-size:24px;font-weight:600;line-height:1.2;margin:0 0 12px}
 .proj p{color:var(--sec);font-size:16px;margin:0 0 22px}
@@ -137,8 +140,8 @@ h3{font-family:var(--f-marca);text-wrap:balance}
   .btn{padding:14px 18px;font-size:15px}
   .wrap{padding:72px 20px}
   .sec-title{margin-bottom:28px}
-  .area-grid,.proj-grid,.sobre-grid,.hub-grid{grid-template-columns:1fr}
-  .sobre-grid,.hub-grid{gap:24px}
+  .area-grid,.proj-grid,.sobre-grid,.hub-grid,.cecierj-grid{grid-template-columns:1fr}
+  .sobre-grid,.hub-grid,.cecierj-grid{gap:24px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
@@ -146,8 +149,8 @@ h3{font-family:var(--f-marca);text-wrap:balance}
 <body>
 <header class="topbar">
   <a class="brand" href="#inicio" aria-label="RogerRio Brasil, início"><img src="assets/marca/logo-horizontal.svg" alt="RogerRio Brasil" width="220" height="66"></a>
-  <nav class="nav" aria-label="Navegação principal"><a href="#atuacao">Atuação</a><a href="#sobre">Sobre</a><a href="#hub-rj">HUB RJ</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a></nav>
-  <details class="menu"><summary aria-label="Abrir menu">Menu</summary><nav aria-label="Navegação no celular"><a href="#atuacao">Atuação</a><a href="#sobre">Sobre</a><a href="#hub-rj">HUB RJ</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a></nav></details>
+  <nav class="nav" aria-label="Navegação principal"><a href="#atuacao">Atuação</a><a href="#sobre">Sobre</a><a href="#cecierj">CECIERJ</a><a href="#hub-rj">HUB RJ</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a></nav>
+  <details class="menu"><summary aria-label="Abrir menu">Menu</summary><nav aria-label="Navegação no celular"><a href="#atuacao">Atuação</a><a href="#sobre">Sobre</a><a href="#cecierj">CECIERJ</a><a href="#hub-rj">HUB RJ</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a></nav></details>
 </header>
 
 <main>
@@ -166,7 +169,7 @@ h3{font-family:var(--f-marca);text-wrap:balance}
     <article class="area" id="jornalismo"><p class="fato">Jovem Pan News Rio · Revista Timeline</p><h3>Jornalismo</h3><p>Comentarista da Jovem Pan News Rio e autor na Revista Timeline, com artigos, entrevistas e análises sobre política e temas nacionais.</p><a href="https://revistatimeline.com/" target="_blank" rel="noopener">Ler artigos ↗</a></article>
     <article class="area"><p class="fato">Startups, universidades e governo</p><h3>HUB RJ de Inovação</h3><p>Coordeno o HUB RJ de Inovação, que conecta startups, universidades, empresas e instituições em todas as regiões do Estado do Rio de Janeiro.</p><a href="#hub-rj">Saiba mais ↓</a></article>
     <article class="area" id="pesquisa"><p class="fato">Mestre pelo PROFNIT/UFRJ</p><h3>Pesquisa e dados</h3><p>Pesquisas em inovação e propriedade intelectual, e estudos eleitorais com bases documentadas, como o Observatório Eleitoral e a análise das apurações presidenciais.</p><a href="https://observatorio.revistatimeline.com/" target="_blank" rel="noopener">Acessar estudos ↗</a></article>
-    <article class="area" id="educacao"><p class="fato">Professor da FAETEC desde 1999</p><h3>Educação</h3><p>Ensino, coordenação e direção de tecnologia na FAETEC, onde fui vice-presidente. Também presidi a Fundação CECIERJ, de educação científica e formação de professores.</p><a href="#sobre">Conheça a trajetória ↓</a></article>
+    <article class="area" id="educacao"><p class="fato">Professor da FAETEC desde 1999</p><h3>Educação</h3><p>Ensino, coordenação e direção de tecnologia na FAETEC, onde fui vice-presidente. Também presidi a Fundação CECIERJ, de educação científica e formação de professores.</p><a href="#cecierj">Conheça a trajetória ↓</a></article>
   </div>
 </div></section>
 
@@ -181,7 +184,19 @@ h3{font-family:var(--f-marca);text-wrap:balance}
   </div>
 </div></section>
 
-<section id="hub-rj"><div class="wrap hub-grid">
+<section id="cecierj"><div class="wrap cecierj-grid">
+  <div>
+    <h2 class="sec-title">Fundação CECIERJ</h2>
+    <p>Presidi a Fundação CECIERJ, instituição do Governo do Estado do Rio de Janeiro dedicada à educação superior a distância, à divulgação científica e à formação de professores.</p>
+    <p>A fundação coordena o Consórcio CEDERJ, que oferece graduação pública e gratuita a distância em parceria com universidades e institutos públicos, como UERJ, UFRJ, UFF, UENF, UNIRIO, UFRRJ, CEFET-RJ e FAETEC, com polos em todas as regiões do estado. É educação pública de qualidade chegando a quem mora longe dos grandes centros.</p>
+  </div>
+  <div>
+    <p class="conecta-h">O que a CECIERJ faz</p>
+    <ul class="conecta"><li>Graduação a distância pelo Consórcio CEDERJ</li><li>Pré-Vestibular Social gratuito</li><li>Divulgação científica, como o Museu Ciência e Vida</li><li>Formação continuada de professores</li></ul>
+  </div>
+</div></section>
+
+<section class="hub-sec" id="hub-rj"><div class="wrap hub-grid">
   <div>
     <h2 class="sec-title">HUB RJ de Inovação</h2>
     <p>Uma frente importante da minha atuação é conectar pessoas, conhecimento e oportunidades no ecossistema fluminense de inovação. Como coordenador do HUB RJ de Inovação, participo da articulação de iniciativas voltadas a startups, empreendedorismo, universidades, empresas e poder público.</p>
